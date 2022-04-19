@@ -10,13 +10,11 @@ public class CategoryDTO implements Serializable{
 	private Long id;
 	private String name;
 	
-	public CategoryDTO() {
-		
-	}
+	public CategoryDTO() { }
 
-	public CategoryDTO(Long id, String nome) {
+	public CategoryDTO(Long id, String name) {
 		this.id = id;
-		this.name = nome;
+		this.name = name;
 	}
 	
 	public CategoryDTO(Category entity) {
@@ -32,12 +30,12 @@ public class CategoryDTO implements Serializable{
 		this.id = id;
 	}
 
-	public String getNome() {
+	public String getName() {
 		return name;
 	}
 
-	public void setNome(String nome) {
-		this.name = nome;
+	public void setNome(String name) {
+		this.name = name;
 	}
 
 	
